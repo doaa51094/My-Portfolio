@@ -1,27 +1,45 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
+import emailjs from 'emailjs-com';
 import styles from "./Contact.module.css";
 import TopNav from "../TopNav/TopNav";
 import Loading from "../Loading/Loading";
 import AOS from "aos";
 import "aos/dist/aos.css";
-AOS.init({ duration: 1000 });
 
 export default function Contact({ title }) {
   const [isLoading, setLoading] = useState(false);
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_vgdiloo', 'template_qh7t01y', form.current, '9pDYr4kMqqYeCHgs7')
+      .then((result) => {
+        console.log(result.text);
+        alert('Message Sent Successfully');
+      }, (error) => {
+        console.log(error.text);
+        alert('Message Sending Failed');
+      });
+
+    e.target.reset();
+  };
 
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 800);
+
+    AOS.init({ duration: 1000 });
   }, []);
+
   return (
     <>
       {isLoading ? (
         <Loading />
       ) : (
         <>
-          {" "}
           <section
             id={`${styles.contact}`}
             className="d-flex justify-content-center align-items-center"
@@ -54,7 +72,6 @@ export default function Contact({ title }) {
                       href="https://www.linkedin.com/in/doaa-mohamed-31003b21b"
                       target="-blank"
                     >
-                      {" "}
                       <div className={`${styles.icon} mx-2`}>
                         <i className="fa-brands fa-linkedin-in fs-4 text-light fa-fade"></i>
                       </div>
@@ -64,13 +81,12 @@ export default function Contact({ title }) {
                     <li className="pb-1">
                       <i className="fa-regular fa-envelope pe-2"></i>
                       <span>
-                        {" "}
                         <a
                           href="mailto:doaa51094@gmail.com"
                           className="text-decoration-none text-light"
                         >
                           doaa51094@gmail.com
-                        </a>{" "}
+                        </a>
                       </span>
                     </li>
                     <li className="pb-1 text-light">
@@ -85,7 +101,7 @@ export default function Contact({ title }) {
                 </div>
                 <div className="col-lg-8 col-12" data-aos="fade-left">
                   <div className={`${styles.item} p-5`}>
-                    <form>
+                    <form ref={form} onSubmit={sendEmail}>
                       <input
                         type="text"
                         className="form-control"

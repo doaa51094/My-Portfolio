@@ -47,14 +47,16 @@ export default function AboutMe({ title }) {
                         BIT MORE ABOUT ME ?
                       </h3>
                       <p>
-                        I'm Doaa Mohamed Ali, A Front-End Developer adept at
-                        creating successful websites that meet customer needs.
-                        produce plans, and improve designs for usability and
-                        functionality, I'm looking forward to building a
-                        long-term relationship with my clients.Having an
-                        in-depth knowledge including advanced HTML5, CSS, CSS3,
-                        SASS, BootStrap5, JSON, XML, JavaScript, JQuery,
-                        React.js.
+                        Hi there! I'm Doaa Mohamed, a passionate front-end developer
+                        with expertise in React and Next. I have 2 years
+                        of experience crafting dynamic and responsive web
+                        applications using these powerful tools. I thrive on
+                        building intuitive user interfaces and collaborating
+                        with cross-functional teams to deliver high-quality
+                        software solutions.
+                        Having an in-depth knowledge
+                        including advanced HTML5, CSS3, SASS, BootStrap5,
+                        JSON, XML,Redux , JavaScript, TypeScript, JQuery, React.js, Next.js,Git and Github.
                       </p>
                       <p>
                         I worked withplugins like Owl Carousel.js - Slick.js -
