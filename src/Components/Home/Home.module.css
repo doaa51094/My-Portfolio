@@ -1,0 +1,16 @@
+.home{
+    background-image: url(../../images/home.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+.portfolioBlock{
+    background-color:rgba(21,31,41,0.9);
+    color: whitesmoke;
+}
+.borderDash{
+    border:2px rgba(12, 18, 24, 0.9) dashed;
+}
+.name{
+    color:rgb(127, 186, 245) ;
+}

@@ -1,0 +1,43 @@
+#contact{
+    background-image: linear-gradient(rgb(23,35,47),50%,#000);
+    height: 100vh;
+}
+.icon{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px rgb(127, 186, 245) dashed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact h3{
+    color: rgb(127, 186, 245);
+}
+#contact a{
+    text-decoration: none;
+}
+#contact ul li i{
+    color: rgb(127, 186, 245);
+}
+.item{
+    background-image: linear-gradient(#000,50%,rgb(23,35,47));
+}
+.item input,.item textarea{
+    background-color: rgb(54, 71, 88);
+    color: white;
+    border: none;
+}
+.item input:focus-within,.item textarea:focus-within{
+    background-color: rgb(54, 71, 88);
+    color: white;
+}
+.item button{
+    background-image: linear-gradient(rgb(23,35,47),50%,#000);
+    border: none;
+}
+@media screen and (max-width:992px) {
+    #contact{
+        height:100%;
+    }
+  } 

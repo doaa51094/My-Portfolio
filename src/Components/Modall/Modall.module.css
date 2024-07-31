@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans&family=Dancing+Script:wght@500&family=Montserrat&family=Poppins:ital,wght@0,500;1,400&family=Roboto:wght@700&family=Xanh+Mono:ital@1&display=swap');
+.x{
+    z-index: 99999;
+}
+.modalBg{
+     background-image: linear-gradient(rgb(7, 11, 15),50%,rgb(156, 147, 147));
+   
+}
+.modalBg h1{
+    color:rgb(127, 186, 245);
+    font-family: 'Dancing Script', cursive;
+}
+.modalBg i{
+    color:rgb(127, 186, 245);
+    cursor: pointer;
+}

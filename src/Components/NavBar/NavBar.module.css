@@ -1,0 +1,56 @@
+.toggleStrip{
+    background-color: #222;
+    position: fixed;
+    bottom:0;
+    right:50%;
+    transform: translateX(50%);
+    z-index: 999;
+
+}
+.toggleStrip li{
+  position: relative;
+}
+.toggleStrip .navIcon{
+    width: 50px;
+    background-color:rgba(247,247,247,0.1);
+    border-radius: 20%;
+    padding: 5px;
+}
+.navIcon:hover{
+    transform: scale(1.1);
+}
+.layer{
+    position: absolute;
+    bottom: 80%;
+    left: 0;
+    transform: translateY(-50%);
+    padding: 5px;
+    border: 2px aqua dashed;
+    color: white;
+    background-color:rgb(21,31,41);
+    transition: all 0.5s ;
+    display: none;
+  }
+  .toggleStrip li button:hover .layer{
+    display: block;
+  }
+  .finger{
+    width: 55px;
+    border-radius: 20%;
+  }
+  @media screen and (max-width:992px) {
+    .navIcon{
+      display: none;
+    }
+    .toggleStrip{
+      background-color: transparent;
+    
+    }
+    .finger{
+      width: 70px;
+     
+    }
+  
+   
+  }
+  

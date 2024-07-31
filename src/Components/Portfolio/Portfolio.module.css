@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans&family=Dancing+Script:wght@500&family=Montserrat&family=Poppins:ital,wght@0,500;1,400&family=Roboto:wght@700&family=Xanh+Mono:ital@1&display=swap');
+.portfolio{
+    background-image: linear-gradient(rgb(23,35,47),50%,#000);
+    height: 100%;
+}
+img{
+    width: 100%;
+}
+.portfolio h3{
+    color: rgb(127, 186, 245);
+}
+.layer{
+    background-color: rgba(255, 255, 255,0.6);
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+.item{
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgb(56, 71, 86);
+}
+.item h5{
+    color:rgb(45, 75, 105) ;
+    font-weight:700;
+    font-family: 'Dancing Script', cursive;
+}
+
+.item:hover .layer{
+    opacity: 1;
+}
+.layer i{
+    background-color:rgb(127, 186, 245);
+    padding: 10px; 
+    margin: 5px;
+    border-radius: 5px;
+}
+.layer a{
+    color:rgb(45, 75, 105) ;
+}
+.layer li{
+    background-color:rgb(127, 186, 245);
+    color:rgb(45, 75, 105) ;
+    padding: 5px; 
+    margin: 5px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:992px) {
+    .portfolio{
+        height: 100%;
+    }
+    }
+

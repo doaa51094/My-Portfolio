@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans&family=Dancing+Script:wght@500&family=Montserrat&family=Poppins:ital,wght@0,500;1,400&family=Roboto:wght@700&family=Xanh+Mono:ital@1&display=swap');
+.TopNavBg{
+    background-color: rgba(127, 186, 245,0.2);
+    z-index: 9999;
+}
+.TopNavBg h4{
+    font-family: 'Dancing Script', cursive;
+}

@@ -1,0 +1,30 @@
+#about{
+   
+    background-image: linear-gradient(rgb(23,35,47),50%,#000);
+    height: 100vh;
+}
+.aboutImg{
+    background-color: rgb(23,35,47);
+    width:200px;
+    height: 200px;
+    border: 7px whitesmoke solid;
+    border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0 0 20px rgb(135, 133, 133);
+}
+.aboutContent ,.icons i{
+    color: rgb(127, 186, 245);
+}
+
+.dashed{
+    border: 2px dashed rgb(127, 186, 245);
+    background-image: linear-gradient(#000,50%,rgb(23,35,47));
+}
+@media screen and (max-width:992px) {
+    #about{
+        height: 100%;
+    }
+    }
+
